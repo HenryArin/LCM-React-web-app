@@ -1,47 +1,66 @@
-body, html {
-  height: 100%;
-  margin: 0;
+body {
+  height: 100vh;
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  background-color: #f4f4f4; /* Optional background */
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+  font-family: "Inter", sans-serif;
+  color: white;
 }
+
 .container {
-  max-width: 500px;
-  margin: 50px auto;
-  padding: 100px;
+  max-width: 420px;
+  width: 420px;
+  min-height: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  background: #1e1e1e;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
   text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures centering */
 }
 
 .input-group {
-  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers input & label */
+  width: 70%; /* Adjust input box width */
 }
 
 label {
-  display: block;
+  font-weight: 600;
   margin-bottom: 5px;
-  font-weight: bold;
+  color: #b3b3b3;
 }
 
 input {
-  width: 100%;
+  width: 80%; /* Smaller width */
+  max-width: 200px; /* Ensures input box stays compact */
   padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  text-align: center; /* Centers text inside input */
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
+  width: 80%;
+  max-width: 200px; /* Matches input width */
+  padding: 10px;
+  background: linear-gradient(90deg, #ff0080, #ff6a00);
   color: white;
+  font-size: 16px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
 }
 
 button:hover {
-  background-color: #45a049;
+  background: linear-gradient(90deg, #ff6a00, #ff0080);
 }
